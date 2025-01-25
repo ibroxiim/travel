@@ -1,0 +1,15 @@
+.hero {
+    background: url(../../assets/image/background/home_hero.jfif);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero_main {
+        background-color: #0000007a;
+        width: 100%;
+        height: 100%;
+    }
+}
