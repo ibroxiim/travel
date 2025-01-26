@@ -8,8 +8,375 @@
     justify-content: center;
 
     .hero_main {
-        background-color: #0000007a;
+        background-color: #00000063;
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 20px;
+
+        span {
+            display: flex;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            gap: 10px;
+
+            p {
+                color: #FFA500;
+            }
+        }
+
+        h2 {
+            font-family: Lato;
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 89px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            max-width: 50%;
+            color: #fff;
+        }
+
+        .read_btn {
+            width: 218px;
+            height: 85px;
+            gap: 0px;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            background: #0336FF;
+        }
+
+        .scroll {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 150px;
+
+            p {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            button {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                border: none;
+                color: #0336FF;
+                background: #fff;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.home_main {
+    padding: 50px 10px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+
+    .mini_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .about_cards {
+            width: 438.23px;
+            height: 598px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+
+            b {
+                font-family: Lato;
+                font-size: 29.65px;
+                font-weight: 700;
+            }
+
+            img {
+                width: 363.9px;
+                height: 293.8px;
+                object-fit: cover;
+            }
+
+            p {
+                width: 363.9px;
+                font-size: 16.38px;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            button {
+                width: 182px;
+                height: 71px;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                border-radius: 8px;
+                background: #0336FF;
+                color: #fff;
+            }
+        }
+
+        .categ_card {
+            width: 450.23px;
+            height: 569px;
+            padding: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            b {
+                font-family: Lato;
+                font-size: 29.65px;
+                font-weight: 700;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 80%;
+                width: 100%;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 500;
+
+                    }
+                }
+            }
+        }
+
+        .title_cards {
+            width: 445px;
+            height: 107px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                font-size: 31.64px;
+                font-weight: 700;
+            }
+
+        }
+
+        .status_cards {
+            width: 445px;
+            height: 364px;
+            background: url(../../assets//image/home/card/mini_van.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 20px;
+
+            p {
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+            }
+
+            .status_info {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                b {
+                    font-family: Lato;
+                    font-size: 31.64px;
+                    font-weight: 700;
+                    color: #fff;
+                    width: 370px;
+                }
+
+                .status_btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #0336FF;
+                        background: #fff;
+                        border: none;
+                        cursor: pointer;
+                        transition: ease-in-out 200ms;
+
+                        &:hover {
+                            color: #fff;
+                            background: #0336FF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .post_list {
+            width: 445px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .list_item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+
+                img {
+                    width: 100px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+
+                .post_info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    p {
+                        font-family: Lato;
+                        font-size: 18px;
+                        color: #0A0909;
+                        font-weight: 500;
+                    }
+
+                    b {
+                        font-family: Lato;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #0A0909;
+
+                    }
+                }
+            }
+        }
+
+        .faq_card {
+            width: 450px;
+            height: 378px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            b {
+                font-family: Lato;
+                font-size: 29.65px;
+                font-weight: 700;
+                color: #0A0909;
+            }
+
+            p {
+                font-family: Lato;
+                font-size: 24px;
+                font-weight: 300;
+                color: #0A0909;
+                width: 340px;
+                text-align: center;
+
+            }
+
+            button {
+                width: 182px;
+                height: 71px;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                border-radius: 8px;
+                background: #0336FF;
+                color: #fff
+            }
+        }
+
+        .social_btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            button {
+                width: 182px;
+                height: 71px;
+                border-radius: 8px;
+                border: none;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                p {
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                i {
+                    font-size: 26px;
+                }
+            }
+
+            .fcb {
+                background: #4056AC;
+            }
+
+            .twt {
+                background: #60B7FE;
+            }
+
+            .ytb {
+                background: #FE2C3C;
+            }
+
+            .inst {
+                background: #E14D93;
+            }
+        }
+    }
+
+    .big_cards {
+        border: 1px solid gold;
     }
 }
